@@ -3,7 +3,21 @@ var s, e;
 
 function getElementFor(start, end, id) {
     let cont = document.createElement("div");
+    let pLabel = document.createElement("p");
     cont.className = "cont";
+    pLabel.style.display = "block";
+    pLabel.style.width = "90%";
+    pLabel.style.marginLeft = "auto";
+    pLabel.style.marginRight = "auto";
+    pLabel.style.fontWeight = "bold";
+    pLabel.innerText = year;
+    container.appendChild(pLabel);
+    let field = document.createElement("input");
+    field.type = "text";
+    field.style.display = "block";
+    field.style.width = "90%";
+    field.style.marginLeft = "auto";
+    field.style.marginRight = "auto";
     let l = document.createElement("label");
     l.innerText = "exp per hour at " + start + " - " + end;
     let i = document.createElement("input");
