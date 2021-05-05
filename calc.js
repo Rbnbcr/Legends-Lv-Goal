@@ -2,8 +2,8 @@ var data = [15.0, 34.0, 57.0, 92.0, 135.0, 372.0, 560.0, 840.0, 1242.0, 1716.0, 
 var s, e;
 
 function getElementFor(start, end, id) {
-    let cont = document.createElement("div");
-    cont.className = "cont";
+    let container = document.createElement("div");
+    container.className = "container";
     let l = document.createElement("label");
     l.style.display = "block";
     l.style.width = "90%";
@@ -11,7 +11,7 @@ function getElementFor(start, end, id) {
     l.style.marginRight = "auto";
     l.style.fontWeight = "bold";
     l.innerText = "Estimated exp per hour at " + start + " - " + end;
-    cont.appendChild(l);
+    container.appendChild(l);
     let i = document.createElement("input");
     i.style.display = "block";
     i.style.width = "90%";
@@ -20,11 +20,11 @@ function getElementFor(start, end, id) {
     i.type = "number";
     i.id = id;
     i.value = 0;
-    cont.style.display = "inline-block";
-    cont.style.width = "50%";
-    cont.appendChild(l);
-    cont.appendChild(i);
-    return cont;
+    container.style.display = "inline-block";
+    container.style.width = "50%";
+    container.appendChild(l);
+    container.appendChild(i);
+    return container;
 }
 
 function init() {
