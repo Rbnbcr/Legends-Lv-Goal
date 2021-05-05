@@ -7,11 +7,10 @@ function getElementFor(start, end, id) {
     let l = document.createElement("label");
     l.innerText = "exp per hour at " + start + " - " + end;
     let i = document.createElement("input");
-    field.type = "text";
-    field.style.display = "block";
-    field.style.width = "90%";
-    field.style.marginLeft = "auto";
-    field.style.marginRight = "auto";
+    i.style.display = "block";
+    i.style.width = "90%";
+    i.style.marginLeft = "auto";
+    i.style.marginRight = "auto";
     i.type = "number";
     i.id = id;
     i.value = 0;
