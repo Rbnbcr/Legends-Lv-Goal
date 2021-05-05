@@ -6,7 +6,7 @@ function getElementFor(start, end, id) {
     container.className = "container";
     let l = document.createElement("label");
     l.style.display = "block";
-    l.style.width = "50%";
+    l.style.width = "55%";
     l.style.marginLeft = "auto";
     l.style.marginRight = "auto";
     l.style.fontWeight = "bold";
@@ -14,14 +14,14 @@ function getElementFor(start, end, id) {
     container.appendChild(l);
     let i = document.createElement("input");
     i.style.display = "block";
-    i.style.width = "50%";
+    i.style.width = "55%";
     i.style.marginLeft = "auto";
     i.style.marginRight = "auto";
     i.type = "number";
     i.id = id;
     i.value = 0;
     container.style.display = "inline-block";
-    container.style.width = "30%";
+    container.style.width = "45%";
     container.appendChild(l);
     container.appendChild(i);
     return container;
