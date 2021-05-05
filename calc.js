@@ -11,6 +11,7 @@ function getElementFor(start, end, id) {
     l.style.marginRight = "auto";
     l.style.fontWeight = "bold";
     l.innerText = "exp per hour at " + start + " - " + end;
+    cont.appendChild(l);
     let i = document.createElement("input");
     i.style.display = "block";
     i.style.width = "90%";
