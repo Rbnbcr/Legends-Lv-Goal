@@ -5,6 +5,11 @@ function getElementFor(start, end, id) {
     let cont = document.createElement("div");
     cont.className = "cont";
     let l = document.createElement("label");
+    l.style.display = "block";
+    l.style.width = "90%";
+    l.style.marginLeft = "auto";
+    l.style.marginRight = "auto";
+    l.style.fontWeight = "bold";
     l.innerText = "exp per hour at " + start + " - " + end;
     let i = document.createElement("input");
     i.style.display = "block";
