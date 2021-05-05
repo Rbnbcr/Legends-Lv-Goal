@@ -10,7 +10,7 @@ function getElementFor(start, end, id) {
     l.style.marginLeft = "auto";
     l.style.marginRight = "auto";
     l.style.fontWeight = "bold";
-    l.innerText = "exp per hour at " + start + " - " + end;
+    l.innerText = "Estimated exp per hour at " + start + " - " + end;
     cont.appendChild(l);
     let i = document.createElement("input");
     i.style.display = "block";
