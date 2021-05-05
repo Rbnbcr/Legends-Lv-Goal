@@ -19,19 +19,16 @@ function getElementFor(start, end, id) {
     field.style.marginRight = "auto";
     field.id = "year_" + year;
     container.appendChild(field);
-    container.style.display = "inline-block";
-    container.style.width = "50%";
-    let cont = document.createElement("div");
-    cont.className = "cont";
     let l = document.createElement("label");
     l.innerText = "exp per hour at " + start + " - " + end;
     let i = document.createElement("input");
     i.type = "number";
     i.id = id;
     i.value = 0;
-    cont.appendChild(l);
-    cont.appendChild(i);
-    return cont;
+    container.appendChild(field);
+    container.style.display = "inline-block";
+    container.style.width = "50%";
+    return container;
 }
 
 function init() {
