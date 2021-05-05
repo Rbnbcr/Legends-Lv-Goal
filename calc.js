@@ -12,7 +12,6 @@ function getElementFor(start, end, id) {
     pLabel.style.fontWeight = "bold";
     pLabel.innerText = year;
     container.appendChild(pLabel);
-    let field = document.createElement("input");
     field.type = "text";
     field.style.display = "block";
     field.style.width = "90%";
