@@ -2,6 +2,25 @@ var data = [15.0, 34.0, 57.0, 92.0, 135.0, 372.0, 560.0, 840.0, 1242.0, 1716.0, 
 var s, e;
 
 function getElementFor(start, end, id) {
+    let container = document.createElement("div");
+    let yearLabel = document.createElement("p");
+    yearLabel.style.display = "block";
+    yearLabel.style.width = "90%";
+    yearLabel.style.marginLeft = "auto";
+    yearLabel.style.marginRight = "auto";
+    yearLabel.style.fontWeight = "bold";
+    yearLabel.innerText = year;
+    container.appendChild(yearLabel);
+    let field = document.createElement("input");
+    field.type = "text";
+    field.style.display = "block";
+    field.style.width = "90%";
+    field.style.marginLeft = "auto";
+    field.style.marginRight = "auto";
+    field.id = "year_" + year;
+    container.appendChild(field);
+    container.style.display = "inline-block";
+    container.style.width = "50%";
     let cont = document.createElement("div");
     cont.className = "cont";
     let l = document.createElement("label");
