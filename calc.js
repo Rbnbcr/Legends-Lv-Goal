@@ -14,6 +14,8 @@ function getElementFor(start, end, id) {
     i.type = "number";
     i.id = id;
     i.value = 0;
+    cont.style.display = "inline-block";
+    cont.style.width = "50%";
     cont.appendChild(l);
     cont.appendChild(i);
     return cont;
