@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Experience Calculator</title>
+        <script src="index.js"></script>
+        <style>
+            .cont{
+                display: block;
+                padding: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: min(90%, 500px);
+            }
+        </style>
+    </head>
+    <body>
+        <p style="text-align: center;width: 100%;">Experience Calculator</p>
+        <div class="cont">
+            <label>CURRENT LEVEL</label>
+            <input type="number" id="currentLevel" value="1">
+        </div>
+        <div class="cont">
+            <label>CURRENT % OF LEVEL</label>
+            <input type="number" id="currentPercent" value="0">
+        </div>
+        <div class="cont">
+            <label>LEVEL GOAL</label>
+            <input type="number" id="levelGoad" value="200">
+        </div>
+        <a href="calculator.html" onclick="return saveData();">Next</a>
+    </body>
+</html>
