@@ -1,5 +1,99 @@
 body {
-margin: 0;
-background-color: gray;
-text-align: center;
+  background-color: #190734;
+  font-family: century-gothic, sans-serif;
+  color: white;
+}
+
+.center {
+  left: 33%;
+  top: 10%;
+}
+
+h1 {
+  position: absolute;
+  top: 11%;
+  text-align: left;
+  margin: auto;
+  padding: 10px;
+  color: white;
+}
+
+input[type="text"] {
+  border-radius: 11px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: NONE;
+  border-radius: 4px;
+  background-color: #888888;
+  color: white;
+  width: 100%;
+}
+
+input[type="number"],
+::placeholder {
+  border-radius: 11px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: NONE;
+  border-radius: 4px;
+  background-color: #888888;
+  color: white;
+  opacity: 1;
+  width: 100%;
+  text-decoration: none;
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.bannerimage {
+  width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: static;
+}
+
+a {
+  border-radius: 11px;
+  padding: 12px 220px;
+  box-sizing: border-box;
+  border: NONE;
+  border-radius: 4px;
+  background-color: #9e98a7;
+  color: white;
+  width: 30%;
+  text-decoration: none;
+  border: 1px, #ffffff;
+  border-style: solid #ffffff 1px;
+}
+
+input[type="text"],
+input[type="number"],
+a:hover {
+  border: 2px outset #ffffff;
+}
+.buttondiv {
+  height: 200px;
+  position: relative;
+}
+
+button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #9e98a7;
+  color: white;
+  height: 40px;
+  border-radius: 4px;
 }
