@@ -2,29 +2,17 @@ var data = [15.0, 34.0, 57.0, 92.0, 135.0, 372.0, 560.0, 840.0, 1242.0, 1716.0, 
 var s, e;
 
 function getElementFor(start, end, id) {
-    let container = document.createElement("div");
-    container.className = "container";
+    let cont = document.createElement("div");
+    cont.className = "cont";
     let l = document.createElement("label");
-    l.style.display = "block";
-    l.style.width = "90%";
-    l.style.marginLeft = "auto";
-    l.style.marginRight = "auto";
-    l.style.fontWeight = "bold";
-    l.innerText = "Estimated exp per hour at " + start + " - " + end;
-    container.appendChild(l);
+    l.innerText = " EXP PER HOUR BETWEEN " + start + " - " + end;
     let i = document.createElement("input");
-    i.style.display = "block";
-    i.style.width = "90%";
-    i.style.marginLeft = "auto";
-    i.style.marginRight = "auto";
     i.type = "number";
     i.id = id;
     i.value = 0;
-    container.style.display = "inline-block";
-    container.style.width = "45%";
-    container.appendChild(l);
-    container.appendChild(i);
-    return container;
+    cont.appendChild(l);
+    cont.appendChild(i);
+    return cont;
 }
 
 function init() {
