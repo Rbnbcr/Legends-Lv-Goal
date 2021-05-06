@@ -1,9 +1,8 @@
 <html>
     <head>
-            <link rel="stylesheet" type="text/css" href="style.css" />
-
         <title>Experience Calculator</title>
         <script src="calc.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
         <style>
             .cont{
                 display: block;
@@ -15,11 +14,26 @@
         </style>
     </head>
     <body onload="init()">
-        <p style="text-align: center;width: 100%;">Experience Calculator</p>
+        <br /><br />
+        <img src="images/banner.png" class="bannerimage" />
+        <br /><br />
+
+        <h1 style="text-align: center;width: 100%;">HOURS PER LEVEL</H1>
+        <br /><br />
+
+        <br /><br />
+
         <div id="levelTimes">
             
         </div>
-        <button onclick="calc()">Calculate</button>
+        <div class="buttondiv">
+            <div class="center">
+        <br /><br />
+        <button onclick="calc()">CALCULATE</button>
+        <br /><br />
+        
+            </div>
+    </div>
         <p style="text-align: center;width: 100%;" id="result"></p>
     </body>
 </html>
