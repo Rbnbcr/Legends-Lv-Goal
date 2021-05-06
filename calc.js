@@ -32,7 +32,7 @@ function getNeededTimeFor(level) {
 }
 
 function calc() {
-    var currentTime = data[s - 1] / getNeededTimeFor(s) * parseFloat(sessionStorage.getItem("percent")) / 100;
+    var currentTime = data[s - 1] / getNeededTimeFor(s) * (100 - parseFloat(sessionStorage.getItem("percent"))) / 100;
     for (var c = s + 1; c < e; c++){
         currentTime += data[c - 1] / getNeededTimeFor(c);
     }
